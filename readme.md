@@ -31,8 +31,8 @@ Resposta json
 ### GET /characters/
 Lista todos os personagens existentes.
 
-Resposta
-json
+Resposta json
+```
 [
   {
     "nome": "The_Godwin",
@@ -42,6 +42,7 @@ json
     "animador": "Edwin Medina"
   }
 ]
+```
 
 ## Executando a aplicação
 Para executar a aplicação, é necessário ter o Python 3 e a biblioteca Flask instalados. Em seguida, execute o seguinte comando no terminal:

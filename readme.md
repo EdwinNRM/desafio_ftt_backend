@@ -13,17 +13,17 @@ Parâmetros:
 - animador: Nome do animador responsável pelo personagem (string, obrigatório)
 
 Exemplo de requisição json
-{
+ {
   "nome": "The_Godwin",
   "descricao": "Um grande programador back end e preferido do professor henrique",
   "imagem": "https://media.discordapp.net/attachments/1073046735162720327/1073046814003052544/ME.png",
   "programa": "Aluno",
   "animador": "Edwin Medina"
-}
+  }
 
 Resposta json
 {
-  "mensagem": "Personagem criado com sucesso!"
+"mensagem": "Personagem criado com sucesso!"
 }
 
 ### GET /characters/

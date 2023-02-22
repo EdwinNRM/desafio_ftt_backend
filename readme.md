@@ -13,6 +13,7 @@ Parâmetros:
 - animador: Nome do animador responsável pelo personagem (string, obrigatório)
 
 Exemplo de requisição json
+```
  {
   "nome": "The_Godwin",
   "descricao": "Um grande programador back end e preferido do professor henrique",
@@ -20,12 +21,13 @@ Exemplo de requisição json
   "programa": "Aluno",
   "animador": "Edwin Medina"
   }
-
+```
 Resposta json
+```
 {
 "mensagem": "Personagem criado com sucesso!"
 }
-
+```
 ### GET /characters/
 Lista todos os personagens existentes.
 

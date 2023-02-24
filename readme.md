@@ -26,24 +26,26 @@ Parâmetros:
 - animador: Nome do animador responsável pelo personagem (string, obrigatório)
 
 Exemplo de requisição json
-{
+```
+ {
   "nome": "The_Godwin",
   "descricao": "Um grande programador back end e preferido do professor henrique",
   "imagem": "https://media.discordapp.net/attachments/1073046735162720327/1073046814003052544/ME.png",
   "programa": "Aluno",
   "animador": "Edwin Medina"
-}
-
+  }
+```
 Resposta json
+```
 {
   "msg": "The_Godwin criado com sucesso!"
 }
-
+```
 ### GET /characters
 Lista todos os personagens existentes.
 
-Resposta
-json
+Resposta json
+```
 [
   {
     "id": 1,
@@ -63,12 +65,13 @@ json
     "animador": "Edwin Medina"
   }
 ]
+```
 
 ### GET /characters/<id>
 Lista o personsagem referente ao ID solicitado
 
-Resposta
-json
+Resposta json
+```
 [
   {
     "id": 1,
@@ -79,6 +82,7 @@ json
     "animador": "Edwin Medina"
   }
 ]
+```
 
 ### PUT /characters/<id>
 Atualiza um personagem com as informações fornecidas no corpo da requisição.
@@ -92,6 +96,7 @@ Parâmetros:
 - animador: Nome do animador responsável pelo personagem
 
 Exemplo de requisição json
+```
 {
   "nome": "The_Godwin",
   "descricao": "Um grande programador back end e preferido do professor henrique",
@@ -99,19 +104,20 @@ Exemplo de requisição json
   "programa": "Aluno",
   "animador": "Edwin Medina"
 }
-
+```
 Resposta json
+```
 {
   'msg': 'personagem atualizado com sucesso'
 }
-
+```
 ### PUT /characters/<id>
 Deleta o personsagem referente ao ID solicitado
-
+```
 {
   'msg': 'personagem deletado com sucesso'
 }
-
+```
 ## Executando a aplicação
 Para executar a aplicação utilize o seguinte comando no terminal:
 

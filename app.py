@@ -28,10 +28,9 @@ db.init_app(app)
 with app.app_context():
     db.create_all()
 
-@app.route('/new', methods=['POST'])
+@app.route('/characters/new', methods=['POST'])
 def create_character():
     data = request.json
-    print(data)
     new_character = Characters(nome=data['nome'], descricao=data['descricao'], imagem=data['imagem'], programa=data['programa'], animador=data['animador'])
     db.session.add(new_character)
     db.session.commit()

@@ -16,7 +16,7 @@ $py pip install Flask Flask-SQLAlchemy PyMySQL
 
 
 ## Endpoints
-### POST /new
+### POST /characters/new
 Cria um novo personagem com as informações fornecidas no corpo da requisição.
 
 Parâmetros:

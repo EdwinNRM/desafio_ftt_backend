@@ -67,7 +67,7 @@ Resposta json
 ]
 ```
 
-### GET /characters/<id>
+### GET /characters/$id
 Lista o personsagem referente ao ID solicitado
 
 Resposta json
@@ -84,7 +84,7 @@ Resposta json
 ]
 ```
 
-### PUT /characters/<id>
+### PUT /characters/$id
 Atualiza um personagem com as informações fornecidas no corpo da requisição.
 
 Parâmetros:
@@ -111,7 +111,7 @@ Resposta json
   'msg': 'personagem atualizado com sucesso'
 }
 ```
-### PUT /characters/<id>
+### DELETE /characters/$id
 Deleta o personsagem referente ao ID solicitado
 ```
 {

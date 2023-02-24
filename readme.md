@@ -1,8 +1,21 @@
 # API de gerenciamento de personagens
-Esta é uma API básica para gerenciar personagens de uma empresa de animação. A API permite criar novos personagens e listar os personagens existentes.
+Esta é uma API básica para gerenciar personagens de uma empresa de animação. A API permite criar novos personagens ,listar os personagens existentes, atualizar as informações e deletar dados.
+
+Pacotes
+Para rodar a API os seguintes pacotes são necessários:
+
+- Python 3.x
+- Flask
+- Flask SQLAlchemy
+- PyMySQL
+
+Para executar a instação basta rodar o código a seguir:
+
+$py pip install Flask Flask-SQLAlchemy PyMySQL
+
 
 ## Endpoints
-### POST /characters/
+### POST /new
 Cria um novo personagem com as informações fornecidas no corpo da requisição.
 
 Parâmetros:
@@ -23,16 +36,42 @@ Exemplo de requisição json
 
 Resposta json
 {
-  "mensagem": "Personagem criado com sucesso!"
+  "msg": "The_Godwin criado com sucesso!"
 }
 
-### GET /characters/
+### GET /characters
 Lista todos os personagens existentes.
 
 Resposta
 json
 [
   {
+    "id": 1,
+    "nome": "The_Godwin",
+    "descricao": "Um grande programador back end e preferido do professor henrique",
+    "imagem": "https://media.discordapp.net/attachments/1073046735162720327/1073046814003052544/ME.png",
+    "programa": "Aluno",
+    "animador": "Edwin Medina"
+  }
+
+  {
+    "id": 2,
+    "nome": "Aluno estudioso",
+    "descricao": "Figura lendária e de difícil visualização nos tempos atuais!",
+    "imagem": "noimage",
+    "programa": "Aluno",
+    "animador": "Edwin Medina"
+  }
+]
+
+### GET /characters/<id>
+Lista o personsagem referente ao ID solicitado
+
+Resposta
+json
+[
+  {
+    "id": 1,
     "nome": "The_Godwin",
     "descricao": "Um grande programador back end e preferido do professor henrique",
     "imagem": "https://media.discordapp.net/attachments/1073046735162720327/1073046814003052544/ME.png",
@@ -41,9 +80,41 @@ json
   }
 ]
 
-## Executando a aplicação
-Para executar a aplicação, é necessário ter o Python 3 e a biblioteca Flask instalados. Em seguida, execute o seguinte comando no terminal:
+### PUT /characters/<id>
+Atualiza um personagem com as informações fornecidas no corpo da requisição.
 
-$ py -m flask -run
+Parâmetros:
+- ID: ID de identificação do personagem a ser atualizado
+- nome: Nome do personagem
+- descricao: Descrição do personagem
+- imagem: Link para a imagem do personagem
+- programa: Nome do programa em que o personagem aparece
+- animador: Nome do animador responsável pelo personagem
+
+Exemplo de requisição json
+{
+  "nome": "The_Godwin",
+  "descricao": "Um grande programador back end e preferido do professor henrique",
+  "imagem": "https://media.discordapp.net/attachments/1073046735162720327/1073046814003052544/ME.png",
+  "programa": "Aluno",
+  "animador": "Edwin Medina"
+}
+
+Resposta json
+{
+  'msg': 'personagem atualizado com sucesso'
+}
+
+### PUT /characters/<id>
+Deleta o personsagem referente ao ID solicitado
+
+{
+  'msg': 'personagem deletado com sucesso'
+}
+
+## Executando a aplicação
+Para executar a aplicação utilize o seguinte comando no terminal:
+
+$ py -m flask run
 
 A aplicação estará disponível em "http://127.0.0.1:5000".

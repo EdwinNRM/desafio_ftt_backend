@@ -7,6 +7,7 @@ Para rodar a API os seguintes pacotes são necessários:
 - Python 3.x
 - Flask
 - Flask SQLAlchemy
+- SQLAlchemy
 - PyMySQL
 
 Para executar a instação basta rodar o código a seguir:

@@ -15,7 +15,7 @@ Para executar a instação basta rodar o código a seguir:
 
 $py pip install Flask Flask-RESTX Flask-SQLAlchemy PyMySQL
 
-Além destes pacotes se faz necessário do uso do MySQL com um banco de dados nomeado "characters"
+Além destes pacotes se faz necessário do uso do MySQL com um banco de dados nomeado "characters".
 Após isso altere a linha referente a URI do banco de dados com os atributos solicitados:
 ```
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:password@hostname/characters'

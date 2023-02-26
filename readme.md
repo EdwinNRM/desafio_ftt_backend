@@ -6,17 +6,18 @@ Para rodar a API os seguintes pacotes são necessários:
 
 - Python 3.x
 - Flask
+- Flask-RESTX
 - Flask SQLAlchemy
 - SQLAlchemy
 - PyMySQL
 
 Para executar a instação basta rodar o código a seguir:
 
-$py pip install Flask Flask-SQLAlchemy PyMySQL
+$py pip install Flask Flask-RESTX Flask-SQLAlchemy PyMySQL
 
 
 ## Endpoints
-### POST /characters/new
+### POST /characters
 Cria um novo personagem com as informações fornecidas no corpo da requisição.
 
 Parâmetros:

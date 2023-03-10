@@ -12,9 +12,9 @@ Para rodar a API os seguintes pacotes são necessários:
 - PyMySQL
 
 Para executar a instação basta rodar o código a seguir:
-
+```
 $py pip install Flask Flask-RESTX Flask-SQLAlchemy PyMySQL
-
+```
 Além destes pacotes se faz necessário do uso do MySQL com um banco de dados nomeado "characters".
 Após isso altere a linha referente a URI do banco de dados com os atributos solicitados:
 ```

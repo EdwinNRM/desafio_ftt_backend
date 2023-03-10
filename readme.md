@@ -127,7 +127,7 @@ Deleta o personsagem referente ao ID solicitado
 ```
 ## Executando a aplicação
 Para executar a aplicação utilize o seguinte comando no terminal:
-
+```
 $ py -m flask run
-
+```
 A aplicação estará disponível em "http://127.0.0.1:5000".
